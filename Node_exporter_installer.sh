@@ -11,6 +11,8 @@ read -n 1 -r -s -p $'Bam phim bat ki de tao user...\n'
 useradd --no-create-home --shell /bin/false node_exporter
 read -n 1 -r -s -p $'Bam phim bat ki de cai dat Node_Exporter...\n'
 # Install
+echo "Cai dat Wget"
+sudo yum install -y wget
 cd /opt
 wget https://github.com/prometheus/node_exporter/releases/download/v0.18.1/node_exporter-0.18.1.linux-amd64.tar.gz
 
